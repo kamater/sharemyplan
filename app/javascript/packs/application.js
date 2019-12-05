@@ -8,6 +8,7 @@ import { createNotification } from "./plugins/notification";
 import { ecritureHome } from "./plugins/bannerHome";
 import { openModal } from './plugins/openModal';
 import { dynamicRating } from './plugins/starsRating';
+import { alertSupp } from './plugins/alert';
 
 
 categoryClicker();
@@ -18,4 +19,5 @@ createNotification();
 ecritureHome();
 openModal();
 dynamicRating();
+alertSupp();
 
