@@ -104,7 +104,9 @@
                   <%= cotisation.user.first_name %>
 
 
-                  <i id="fire-co-abonne" style="color: #4382a4; cursor: pointer" class="far fa-trash-alt"></i>
+                  <span style="cursor: pointer;">
+                    <img id="fire-co-abonne" src="https://icons8.com/vue-static/landings/animated-icons/icons/trash-bin/trash-bin.gif" alt="" style="width: 20px; height: 20px;">
+                  </span>
                   <%= link_to "", cotisation_delete_by_owners_path(cotisation), method: :delete, id: "fire-co-abonne-link", class: "hidden"  %>
 
 

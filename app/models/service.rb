@@ -7,7 +7,8 @@ class Service < ApplicationRecord
     "jeuvideo" => "fas fa-gamepad",
     "cloud" => "fas fa-cloud-upload-alt",
     "presse" => "fas fa-book",
-    "logiciel" => "fab fa-chrome"
+    "logiciel" => "fab fa-chrome",
+    "x" => "fas fa-toilet-paper"
   }
 
   has_many :subscriptions, dependent: :destroy
@@ -17,3 +18,4 @@ class Service < ApplicationRecord
   validates :total_price, presence: true
   validates :category, inclusion: CATEGORIES.keys
 end
+

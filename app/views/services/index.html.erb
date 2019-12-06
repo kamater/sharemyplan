@@ -20,7 +20,7 @@
 <div class="container container-index">
 
   <div id="selection">
-    <% @services.each do |service| %>
+    <% @services.sort_by { |service| service.total_price }.each do |service| %>
       <% path = @user_choice == "cotisations" ? "/services/#{service.id}/subscriptions" : "/services/#{service.id}/subscriptions/new" %>
       <%= link_to path do %>
         <div class="options <%= service.category %>" data-categoryList="<%= service.category %>">
