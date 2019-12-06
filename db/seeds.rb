@@ -74,7 +74,7 @@ sandrine = User.create!(email: 'sandrine@gmail.com', password: 'azerty', first_n
 sandrine.remote_photo_url = "https://avatars0.githubusercontent.com/u/7688029?v=4"
 sandrine.save!
 
-marie = User.create!(email: 'marie@gmail.com', password: 'azerty', first_name: 'Marie', last_name: 'go', phone_number: '0611189977')
+marie = User.create!(email: 'marie@gmail.com', password: 'azerty', first_name: 'Pauline', last_name: 'go', phone_number: '0611189977')
 marie.remote_photo_url = "https://avatars1.githubusercontent.com/u/30141649?v=4"
 marie.save!
 
@@ -135,6 +135,10 @@ cyperghost = Service.create!(name: 'CyperGhost',       number_of_places: '6',   
 zenmate = Service.create!(name: 'ZenMate',          number_of_places: '5',    total_price: '10',    category: 'logiciel',    description: 'Service VPN',                                   photo: 'zenmate.png')
 trustzone = Service.create!(name: 'TrustZone',        number_of_places: '2',    total_price: '8',     category: 'logiciel',    description: 'Service de transfert de données ',              photo: 'trustzone.png')
 fsecure = Service.create!(name: 'FSecure',          number_of_places: '2',    total_price: '5',     category: 'logiciel',    description: 'Protection de votre ordinateur ',               photo: 'fsecure.png')
+xhamster = Service.create!(name: 'Xhamster',            number_of_places: '2',    total_price: '49',    category: 'x',      description: 'Regardez ce que vous voulez ',                   photo: 'xhamster.png')
+youjizz = Service.create!(name: 'Youjizz',            number_of_places: '2',    total_price: '49',    category: 'x',      description: 'Regardez ce que vous voulez ',                   photo: 'youjizz.png')
+youporn = Service.create!(name: 'Youporn',            number_of_places: '2',    total_price: '49',    category: 'x',      description: 'Regardez ce que vous voulez ',                   photo: 'youporn.png')
+chaturbate = Service.create!(name: 'Chaturbate',            number_of_places: '2',    total_price: '49',    category: 'x',      description: 'Regardez ce que vous voulez ',                   photo: 'chaturbate.png')
 mcafee = Service.create!(name: 'McAfee',           number_of_places: '4',    total_price: '7,20',  category: 'logiciel',    description: 'Protection de votre ordinateur ',               photo: 'mcafee.png')
 pure_vpn = Service.create!(name: 'Pure VPN',         number_of_places: '4',    total_price: '9,60',  category: 'logiciel',    description: 'Serice VPN',                                    photo: 'purevpn.png')
 playstation_plus = Service.create!(name: 'PlayStation Plus', number_of_places: '2',    total_price: '5',     category: 'jeuvideo',  description: 'Jouez aux jeux telechargés',                    photo: 'playstation.png')
@@ -151,7 +155,6 @@ le_figaro = Service.create!(name: 'Le Figaro',        number_of_places: '5',    
 liberation = Service.create!(name: 'Liberation',       number_of_places: '2',    total_price: '8',     category: 'presse',      description: 'Le journal en version numérique',               photo: 'liberation.png')
 express = Service.create!(name: 'L Express',        number_of_places: '2',    total_price: '8',     category: 'presse',      description: 'Le journal en version numérique',               photo: 'lexpress.png')
 izneo = Service.create!(name: 'Izneo',            number_of_places: '6',    total_price: '13',    category: 'presse',      description: 'Lisez comme vous le voulez ',                   photo: 'izneo.png')
-xhamster = Service.create!(name: 'Xhamster',            number_of_places: '2',    total_price: '49',    category: 'presse',      description: 'Regardez ce que vous voulez ',                   photo: 'xhamster.png')
 puts "finished"
 
 

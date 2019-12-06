@@ -1,10 +1,7 @@
 <div class="modal fade" id="modal-cotisation" tabindex="-1" role="dialog" aria-labelledby="<%= cotisation.id %>" aria-hidden="true">
-
   <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 100%;">
     <div class="modal-content" style="background-color: transparent; border-top: none; border: none;">
-
     <div class="cotisation-card" style="margin: 0 auto; width: 85%">
-
     <div class="cotisation-card-header pt-2 d-flex justify-content-center align-items-center">
       <div class="cotisation-title py-2" style="width: 95%; text-align: center;">
         <h3>Détail de ton abonnement <%= cotisation.subscription.name %> (co-abonné)</h3>
@@ -13,7 +10,6 @@
         <a href="/dashboard"><i class="far fa-times-circle" style="color: white; font-size: 1.4em;"></i></a>
       </div>
     </div>
-
     <div class="cotisation-card-body d-flex flex-wrap mt-3" style="border-bottom: 1px solid #e3e4e5">
       <div class="cotisation-logo d-flex align-items-center justify-content-center" style="text-align: center; height: 180px;">
         <%= image_tag(cotisation.subscription.service.photo, height: '100', width: '200')%>
@@ -31,27 +27,17 @@
           <a class="btn btn-abus" href="mailto:contact@sharemyplan.site %>">Signaler un abus</a>
         </div>
         <div class="buton-rigth mr-2">
-
           <%= link_to "Me retirer de ce share", "", id: "share-quit", class: "btn btn-destroy"  %>
           <%= link_to "", cotisation_path(cotisation), method: :delete, id: "share-quit-link", class: "hidden" %>
-
           <br>
           <br>
           <%= link_to 'Laisser un avis', new_cotisation_review_path(cotisation), class: 'btn btn-avis' %>
-
-
-
-
         </div>
-
       </div>
     </div>
-
     <div class="cotisation-card-footer mt-4">
       <h4 class="mb-4">Tes co-abonnés</h4>
-
       <div class="card-co-abo d-flex align-items-center justify-content-around mx-4">
-
           <% cotisation.subscription.cotisations.each do |cotisation| %>
             <div class="co-abos-card mb-3" style="text-align: center;">
               <% if cotisation.user.photo? %>
@@ -64,14 +50,8 @@
             </div>
           <% end %>
         </div>
-
       </div>
     </div>
-
-
-
-
-
     </div>
   </div>
 </div>
